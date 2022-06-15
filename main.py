@@ -80,17 +80,17 @@ def main():
                 player_turn(side)
                 display()
                 if check():
-                    print('\nПоздравляем! Вы выиграли!\n')
+                    print('\nПоздравляем! Ты выиграл!\n')
                     break
                 count += 1
             else:
                 computer_turn(comp_side)
                 display()
                 if check():
-                    print('\nВы проиграли(((\n')
+                    print('\nТы проиграл(((\n')
                     break
                 count += 1
-        again = input('Хотите сыграть ещё раз? (Да/Нет)\n\n')
+        again = input('Хочешь сыграть ещё раз? (Да/Нет)\n\n')
         if re.fullmatch(r'да', again, re.IGNORECASE):
             continue
         print('Спасибо за игру!)')
