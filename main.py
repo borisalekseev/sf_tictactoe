@@ -34,9 +34,10 @@ def display():
 
 
 def player_turn(side):
-    coords = (int(input('Введи координату по горизонтали: ')),
-              int(input('Введи координату по вертикали: ')))
     while True:
+        coords = (int(input('Введи координату по горизонтали: ')),
+              int(input('Введи координату по вертикали: ')))
+    
         try:
             if play_field[coords[0] - 1][coords[1] - 1] == empty_field:
                 play_field[coords[0] - 1][coords[1] - 1] = side
